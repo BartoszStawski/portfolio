@@ -12,9 +12,8 @@ header:
  title: "Bartosz Stawski"
  subtitle: "Fotografia"
 footer:
- name: ""
- bio: ""
- github: ""
+ name: "Bartosz Stawski"
+ bio: "Cześć, mam na imię Bartek i zajmuje się fotografią. Zapraszam do kontaktu na socialach."
 web_design: "AJ"
 social_urls:
   facebook: "https://www.facebook.com/bartek.stawski.5"

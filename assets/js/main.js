@@ -259,7 +259,7 @@
             baseZIndex: 20000,
             caption: function ($a) {
                 var $image_img = $a.children('img');
-                // var data = exifDatas[$image_img.data('name')];
+                var data = $image_img.data('name');
                 return data !== undefined ? '<p>' + data + '</p>' : ' ';
             },
             fadeSpeed: 300,

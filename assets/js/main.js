@@ -20,10 +20,6 @@
             $body = $('body'),
             $wrapper = $('#wrapper');
 
-        // Hack: Enable IE workarounds.
-        if (skel.vars.IEVersion < 12)
-            $body.addClass('ie');
-
         // Touch?
         if (skel.vars.mobile)
             $body.addClass('touch');
@@ -239,16 +235,6 @@
 
             // Hide original img.
             $image_img.hide();
-
-            // Hack: IE<11 doesn't support pointer-events, which means clicks to our image never
-            // land as they're blocked by the thumbnail's caption overlay gradient. This just forces
-            // the click through to the image.
-            if (skel.vars.IEVersion < 11)
-                $this
-                    .css('cursor', 'pointer')
-                    .on('click', function () {
-                        $image.trigger('click');
-                    });
 
         /
 
